@@ -1,0 +1,28 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+#left-part {
+	background: url('../../img/left-back.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Jura', sans-serif;
+    color:#ffffff;
+}
+#left-part h4 {
+    font-size: 20px;
+}
+#left-part h5 {
+    font-size: 18px;
+}
+#left-part p {
+    font-size: 14px;
+}
