@@ -16,6 +16,10 @@
     -o-background-size: cover;
     font-family: 'Jura', sans-serif;
     color:#ffffff;
+    padding-top:34px;
+}
+#right-part {
+    font-family: 'Jura', sans-serif;
 }
 #left-part h4 {
     font-size: 20px;
@@ -25,4 +29,54 @@
 }
 #left-part p {
     font-size: 14px;
+}
+#right-part h3 {
+    font-size: 40px;
+}
+#right-part h4 {
+    font-size: 18px;
+}
+.card-block {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.card-img-top {
+    margin: 0 auto;
+}
+.card-title-grey {
+    font-family: 'Jura', sans-serif;
+	color:#ccc;
+	font-size:18px;
+  width:60%;
+}
+.loginCard {
+  width: 34rem;
+  margin-top:50px;
+}
+.rounded {
+  border-radius: 16px;
+}
+.fullsize {
+  width:100%;
+  text-align: center;
+}
+.rounded-left {
+  -webkit-border-top-left-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -moz-border-radius-topleft: 16px;
+  -moz-border-radius-bottomleft: 16px;
+  border-top-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+input[type='text'] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.btn {
+  margin-top:10px;
+}
+.btn-ghosted {
+  background-color: #E2ADAE;
+  border-color: #E2ADAE;
+
 }
