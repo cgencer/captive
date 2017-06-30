@@ -9,14 +9,25 @@
   }
 }
 #left-part {
-	background: url('../../img/left-back.png') no-repeat center center fixed;
+	background: url('../../img/left-back.png') no-repeat top left fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     font-family: 'Jura', sans-serif;
+    width: 100%;
     color:#ffffff;
-    padding-top:34px;
+}
+@media all and (max-width: 400px) {
+    #left-part {
+        background: url('../../img/left-back-white.png') no-repeat center left fixed;
+        background-size: 400px 300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        width: 100%;
+    }
 }
 #right-part {
     font-family: 'Jura', sans-serif;
@@ -36,6 +47,9 @@
 #right-part h4 {
     font-size: 18px;
 }
+.card {
+  border:none;
+}
 .card-block {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -49,6 +63,14 @@
 	font-size:18px;
   width:60%;
 }
+.card-footer {
+  background-color:#fff transparent !important;
+  padding:0;
+  border:0;
+}
+#left-part h4, #left-part h5 {
+  margin-top: 30px;
+}
 .loginCard {
   width: 34rem;
   margin-top:50px;
@@ -60,13 +82,35 @@
   width:100%;
   text-align: center;
 }
+@media all and (max-width: 400px) {
+.rounded-left {
+  -webkit-border-top-left-radius:16px;
+  -moz-border-radius-topleft:16px;
+  border-top-left-radius:16px;
+
+  -webkit-border-top-right-radius:16px;
+  -moz-border-radius-topright:16px;
+  border-top-right-radius:16px;
+
+  -webkit-border-bottom-left-radius:0;
+  -moz-border-radius-bottomleft:0;
+  border-top-left-radius:0;
+
+  -webkit-border-bottom-right-radius:0;
+  -moz-border-radius-bottomright:0;
+  border-top-right-radius:0;
+}
+}
+@media all (min-width: 401px) {
 .rounded-left {
   -webkit-border-top-left-radius: 16px;
-  -webkit-border-bottom-left-radius: 16px;
   -moz-border-radius-topleft: 16px;
+  border-top-left-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
   -moz-border-radius-bottomleft: 16px;
   border-top-left-radius: 16px;
-  border-top-left-radius: 16px;
+
+}
 }
 input[type='text'] {
   border: none;
@@ -78,5 +122,52 @@ input[type='text'] {
 .btn-ghosted {
   background-color: #E2ADAE;
   border-color: #E2ADAE;
+}
+@media all and (max-width: 319px) {
+    .home {
+        background-image: url('../../img/back-200.png');
+        background-size: 200px 150px;
+    }
+}
 
+@media all and (max-width: 639px) and (min-width: 320px) {
+    .home {
+        background-image: url('../../img/back-320.png');
+        background-size: 320px 240px;
+    }
+}
+
+@media all and (max-width: 799px) and (min-width: 640px) {
+    .home {
+        background-image: url('../../img/back-640.png');
+        background-size: 640px 480px;
+    }
+}
+
+@media all and (max-width: 1023px) and (min-width: 800px) {
+    .home {
+        background-image: url('../../img/back-800.png');
+        background-size: 800px 600px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .home {
+        background-image: url('../../img/back-1024.png');
+        background-size: 1024px 768px;
+    }
+}
+
+/* this will have no @media, so will apply for every resolution */
+.home {
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+}
+html, body{
+  height: 100%;
 }
