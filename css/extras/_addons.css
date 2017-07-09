@@ -113,6 +113,21 @@
 #right-part h4 {
     font-size: 18px;
 }
+#right-part h5 {
+    display: inline;
+}
+.hr-mins h3 {
+  line-height: 1rem;
+}
+.hr-mins h5 {
+  margin-top:0;
+  padding-top:0;
+}
+.hrs, .mins {
+}
+.mins {
+  padding-left: 15px;
+}
 .card {
   border:none;
 }
